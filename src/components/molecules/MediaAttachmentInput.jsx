@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Button from '../atoms/Button'
 import AppIcon from '../atoms/AppIcon'
 import Text from '../atoms/Text'
-
+import Label from '../atoms/Label'
 const MediaAttachmentInput = ({ attachedMedia, onAddMedia, onRemoveMedia, maxMedia }) => {
   return (
     <div>
