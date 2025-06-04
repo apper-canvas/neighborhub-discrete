@@ -10,25 +10,29 @@ const PageLayout = ({ currentUser, navigationItems, children }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-surface-50 via-white to-surface-100">
       <TopNavbar onMenuToggle={() => setSidebarOpen(!sidebarOpen)} currentUser={currentUser} />
+      
+      <div className="flex h-screen pt-16">
+        {/* Sidebar Overlay for Mobile */}
+        <AnimatePresence>
+          {sidebarOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+              onClick={() => setSidebarOpen(false)}
+            />
+          )}
+        </AnimatePresence>
 
-      {/* Sidebar Overlay */}
-      <AnimatePresence>
-        {sidebarOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-            onClick={() => setSidebarOpen(false)}
-          />
-        )}
-      </AnimatePresence>
+        <Sidebar currentUser={currentUser} navigationItems={navigationItems} isOpen={sidebarOpen} />
 
-<Sidebar currentUser={currentUser} navigationItems={navigationItems} isOpen={sidebarOpen} />
-
-      {/* Main Content Area */}
-      <div className="transition-all duration-300 lg:ml-64">
-        {children}
+        {/* Main Content Area */}
+        <div className="flex-1 overflow-auto">
+          <div className="min-h-full">
+            {children}
+          </div>
+        </div>
       </div>
     </div>
   )
