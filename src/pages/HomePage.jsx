@@ -92,7 +92,7 @@ const HomePage = () => {
     { icon: 'Settings', label: 'Settings' }
   ]
 
-  return (
+return (
     <PageLayout currentUser={currentUser} navigationItems={navigationItems}>
       <CommunityFeedTemplate
         posts={posts}

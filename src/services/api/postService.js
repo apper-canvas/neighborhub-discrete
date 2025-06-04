@@ -1,55 +1,117 @@
-import postData from '../mockData/post.json';
-
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const { ApperClient } = window.ApperSDK
 
 class PostService {
   constructor() {
-    this.posts = [...postData];
+    this.apperClient = new ApperClient({
+      apperProjectId: import.meta.env.VITE_APPER_PROJECT_ID,
+      apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY
+    })
   }
 
+  async fetchAllPosts(params = {}) {
+    try {
+      const queryParams = {
+        fields: ["Name", "content", "category", "timestamp", "author_id", "Tags", "Owner", "CreatedOn", "CreatedBy", "ModifiedOn", "ModifiedBy"],
+        orderBy: [{ fieldName: "timestamp", SortType: "DESC" }],
+        ...params
+      }
+      const response = await this.apperClient.fetchRecords("post", queryParams)
+      return response?.data || []
+    } catch (error) {
+      console.error("Error fetching posts:", error)
+      throw error
+    }
+  }
+
+  async getPostById(postId) {
+    try {
+      const params = {
+        fields: ["Name", "content", "category", "timestamp", "author_id", "Tags", "Owner", "CreatedOn", "CreatedBy", "ModifiedOn", "ModifiedBy"]
+      }
+      const response = await this.apperClient.getRecordById("post", postId, params)
+      return response?.data || null
+    } catch (error) {
+      console.error(`Error fetching post ${postId}:`, error)
+      throw error
+    }
+  }
+
+  async createPost(postData) {
+    try {
+      const params = {
+        records: [{
+          Name: postData.Name || postData.content?.substring(0, 50) || "New Post",
+          content: postData.content,
+          category: postData.category || "general",
+          timestamp: postData.timestamp || new Date().toISOString(),
+          author_id: postData.author_id,
+          Tags: postData.Tags || "",
+          Owner: postData.Owner
+        }]
+      }
+      const response = await this.apperClient.createRecord("post", params)
+      return response?.results?.[0]?.data || null
+    } catch (error) {
+      console.error("Error creating post:", error)
+      throw error
+    }
+  }
+
+  async updatePost(postId, postData) {
+    try {
+      const params = {
+        records: [{
+          Id: postId,
+          Name: postData.Name,
+          content: postData.content,
+          category: postData.category,
+          timestamp: postData.timestamp,
+          author_id: postData.author_id,
+          Tags: postData.Tags,
+          Owner: postData.Owner
+        }]
+      }
+      const response = await this.apperClient.updateRecord("post", params)
+      return response?.results?.[0]?.data || null
+    } catch (error) {
+      console.error(`Error updating post ${postId}:`, error)
+      throw error
+    }
+  }
+
+  async deletePost(postId) {
+    try {
+      const params = {
+        RecordIds: [postId]
+      }
+      const response = await this.apperClient.deleteRecord("post", params)
+      return response?.success || false
+    } catch (error) {
+      console.error(`Error deleting post ${postId}:`, error)
+      throw error
+    }
+  }
+
+  // Legacy methods for backward compatibility
   async getAll() {
-    await delay(350);
-    return [...this.posts].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    return this.fetchAllPosts()
   }
 
   async getById(id) {
-    await delay(250);
-    const post = this.posts.find(p => p.id === id);
-    if (!post) {
-      throw new Error('Post not found');
-    }
-    return { ...post };
+    return this.getPostById(id)
   }
 
   async create(postData) {
-    await delay(400);
-    const newPost = {
-      ...postData,
-      id: Date.now().toString()
-    };
-    this.posts.push(newPost);
-    return { ...newPost };
+    return this.createPost(postData)
   }
 
   async update(id, postData) {
-    await delay(350);
-    const index = this.posts.findIndex(p => p.id === id);
-    if (index === -1) {
-      throw new Error('Post not found');
-    }
-    this.posts[index] = { ...this.posts[index], ...postData };
-    return { ...this.posts[index] };
+    return this.updatePost(id, postData)
   }
 
   async delete(id) {
-    await delay(300);
-    const index = this.posts.findIndex(p => p.id === id);
-    if (index === -1) {
-      throw new Error('Post not found');
-    }
-    const deletedPost = this.posts.splice(index, 1)[0];
-    return { ...deletedPost };
+    return this.deletePost(id)
   }
 }
 
-export default new PostService();
+export default new PostService()
