@@ -24,10 +24,10 @@ const PageLayout = ({ currentUser, navigationItems, children }) => {
         )}
       </AnimatePresence>
 
-      <Sidebar currentUser={currentUser} navigationItems={navigationItems} isOpen={sidebarOpen} />
+<Sidebar currentUser={currentUser} navigationItems={navigationItems} isOpen={sidebarOpen} />
 
       {/* Main Content Area */}
-      <div className={`transition-all duration-300 ${sidebarOpen ? 'lg:ml-72' : 'lg:ml-72'} pt-16`}>
+      <div className="transition-all duration-300 lg:ml-72 pt-16">
         {children}
       </div>
     </div>
