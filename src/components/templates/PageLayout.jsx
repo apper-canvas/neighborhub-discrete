@@ -27,7 +27,7 @@ const PageLayout = ({ currentUser, navigationItems, children }) => {
 <Sidebar currentUser={currentUser} navigationItems={navigationItems} isOpen={sidebarOpen} />
 
       {/* Main Content Area */}
-      <div className="transition-all duration-300 lg:ml-64 pt-4">
+      <div className="transition-all duration-300 lg:ml-64">
         {children}
       </div>
     </div>
