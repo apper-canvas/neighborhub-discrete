@@ -1,0 +1,231 @@
+[
+  {
+    "id": "1",
+    "authorId": "2",
+    "content": "Great news everyone! The community garden project has been approved. We'll be starting construction next month in the vacant lot behind building C. Looking for volunteers to help with planning and setup!",
+    "media": [
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&h=300&fit=crop"
+    ],
+    "category": "announcement",
+    "reactions": [
+      {
+        "userId": "1",
+        "type": "Heart",
+        "timestamp": "2024-01-15T10:30:00Z"
+      },
+      {
+        "userId": "3",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-15T10:45:00Z"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c1",
+        "userId": "1",
+        "content": "This is fantastic! Count me in for volunteering.",
+        "timestamp": "2024-01-15T11:00:00Z"
+      }
+    ],
+    "timestamp": "2024-01-15T09:00:00Z"
+  },
+  {
+    "id": "2",
+    "authorId": "5",
+    "content": "Monthly society meeting scheduled for this Saturday at 6 PM in the community hall. Agenda includes budget review, maintenance updates, and new security measures discussion. All residents are encouraged to attend.",
+    "media": [],
+    "category": "announcement",
+    "reactions": [
+      {
+        "userId": "2",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-14T15:20:00Z"
+      }
+    ],
+    "comments": [],
+    "timestamp": "2024-01-14T14:30:00Z"
+  },
+  {
+    "id": "3",
+    "authorId": "1",
+    "content": "Has anyone else noticed the street light near the main gate is flickering? It's been doing this for the past few days. Should we report it to maintenance?",
+    "media": [],
+    "category": "maintenance",
+    "reactions": [
+      {
+        "userId": "4",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-13T20:15:00Z"
+      },
+      {
+        "userId": "6",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-13T20:30:00Z"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c2",
+        "userId": "8",
+        "content": "Thanks for reporting. I'll have it fixed by tomorrow.",
+        "timestamp": "2024-01-13T21:00:00Z"
+      }
+    ],
+    "timestamp": "2024-01-13T19:45:00Z"
+  },
+  {
+    "id": "4",
+    "authorId": "3",
+    "content": "Don't forget about the New Year's community potluck this Sunday! Bring your favorite dish to share. We have the community hall reserved from 12-6 PM. Can't wait to see everyone!",
+    "media": [
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop"
+    ],
+    "category": "event",
+    "reactions": [
+      {
+        "userId": "1",
+        "type": "Heart",
+        "timestamp": "2024-01-12T16:20:00Z"
+      },
+      {
+        "userId": "7",
+        "type": "Smile",
+        "timestamp": "2024-01-12T16:45:00Z"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c3",
+        "userId": "6",
+        "content": "I'll bring my famous lasagna!",
+        "timestamp": "2024-01-12T17:00:00Z"
+      }
+    ],
+    "timestamp": "2024-01-12T15:30:00Z"
+  },
+  {
+    "id": "5",
+    "authorId": "6",
+    "content": "Lost cat spotted near building B. Orange tabby with white paws, very friendly. If anyone is missing their cat or knows who this belongs to, please let me know!",
+    "media": [
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+    ],
+    "category": "community",
+    "reactions": [
+      {
+        "userId": "2",
+        "type": "Heart",
+        "timestamp": "2024-01-11T13:30:00Z"
+      }
+    ],
+    "comments": [],
+    "timestamp": "2024-01-11T12:15:00Z"
+  },
+  {
+    "id": "6",
+    "authorId": "4",
+    "content": "Maintenance fees for January are now due. Please make sure to pay by the 15th to avoid late charges. You can pay online through the resident portal or drop off a check at the office.",
+    "media": [],
+    "category": "announcement",
+    "reactions": [],
+    "comments": [
+      {
+        "id": "c4",
+        "userId": "7",
+        "content": "Is the online portal working? I've been having trouble accessing it.",
+        "timestamp": "2024-01-10T11:30:00Z"
+      }
+    ],
+    "timestamp": "2024-01-10T10:00:00Z"
+  },
+  {
+    "id": "7",
+    "authorId": "7",
+    "content": "Thank you to everyone who helped with the holiday decorations! The community looked absolutely beautiful. Special thanks to the decorating committee for all their hard work!",
+    "media": [
+      "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?w=400&h=300&fit=crop"
+    ],
+    "category": "community",
+    "reactions": [
+      {
+        "userId": "1",
+        "type": "Heart",
+        "timestamp": "2024-01-09T19:20:00Z"
+      },
+      {
+        "userId": "3",
+        "type": "Heart",
+        "timestamp": "2024-01-09T19:45:00Z"
+      },
+      {
+        "userId": "5",
+        "type": "Smile",
+        "timestamp": "2024-01-09T20:00:00Z"
+      }
+    ],
+    "comments": [],
+    "timestamp": "2024-01-09T18:30:00Z"
+  },
+  {
+    "id": "8",
+    "authorId": "8",
+    "content": "Reminder: Please make sure to register all visitors at the security desk. We've had some unregistered visitors recently, and it's important for everyone's safety that we know who's in our community.",
+    "media": [],
+    "category": "announcement",
+    "reactions": [
+      {
+        "userId": "2",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-08T14:15:00Z"
+      }
+    ],
+    "comments": [],
+    "timestamp": "2024-01-08T13:45:00Z"
+  },
+  {
+    "id": "9",
+    "authorId": "9",
+    "content": "The gym equipment has been cleaned and sanitized. All machines are now working properly. Please remember to wipe down equipment after use and maintain social distancing guidelines.",
+    "media": [],
+    "category": "maintenance",
+    "reactions": [],
+    "comments": [],
+    "timestamp": "2024-01-07T16:20:00Z"
+  },
+  {
+    "id": "10",
+    "authorId": "10",
+    "content": "Looking to start a book club in our community! Anyone interested in joining? We could meet monthly in the community room. Please comment if you're interested and suggest some book genres you'd like to explore!",
+    "media": [],
+    "category": "community",
+    "reactions": [
+      {
+        "userId": "1",
+        "type": "Heart",
+        "timestamp": "2024-01-06T21:10:00Z"
+      },
+      {
+        "userId": "3",
+        "type": "ThumbsUp",
+        "timestamp": "2024-01-06T21:25:00Z"
+      }
+    ],
+    "comments": [
+      {
+        "id": "c5",
+        "userId": "1",
+        "content": "I'd love to join! I'm into mystery and sci-fi.",
+        "timestamp": "2024-01-06T22:00:00Z"
+      },
+      {
+        "id": "c6",
+        "userId": "7",
+        "content": "Count me in! I prefer contemporary fiction.",
+        "timestamp": "2024-01-06T22:15:00Z"
+      }
+    ],
+    "timestamp": "2024-01-06T20:45:00Z"
+  }
+]

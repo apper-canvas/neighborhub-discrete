@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "residentId": "1",
+    "category": "Maintenance",
+    "description": "The elevator in building A has been making strange noises and occasionally stopping between floors. This has happened three times this week and is concerning for safety reasons.",
+    "status": "In Progress",
+    "assignedTo": "9",
+    "priority": "High",
+    "createdAt": "2024-01-15T14:30:00Z"
+  },
+  {
+    "id": "2",
+    "residentId": "6",
+    "category": "Noise",
+    "description": "Loud music and parties from apartment B-301 almost every night after 11 PM. It's affecting my sleep and work schedule. This has been ongoing for two weeks.",
+    "status": "Open",
+    "assignedTo": "2",
+    "priority": "Medium",
+    "createdAt": "2024-01-14T22:15:00Z"
+  },
+  {
+    "id": "3",
+    "residentId": "7",
+    "category": "Security",
+    "description": "Main gate security camera appears to be not working. The screen shows static and there's no recording for the past few days. This is a security concern for all residents.",
+    "status": "Resolved",
+    "assignedTo": "8",
+    "priority": "High",
+    "createdAt": "2024-01-13T16:45:00Z"
+  },
+  {
+    "id": "4",
+    "residentId": "10",
+    "category": "Plumbing",
+    "description": "Low water pressure in apartment A-401, especially in the kitchen and main bathroom. Sometimes there's no water at all during peak hours in the morning.",
+    "status": "Open",
+    "assignedTo": "9",
+    "priority": "High",
+    "createdAt": "2024-01-12T08:20:00Z"
+  },
+  {
+    "id": "5",
+    "residentId": "3",
+    "category": "Parking",
+    "description": "Non-residents are parking in our designated visitor spots for extended periods. This leaves no space for actual visitors of residents. Need better monitoring.",
+    "status": "In Progress",
+    "assignedTo": "8",
+    "priority": "Medium",
+    "createdAt": "2024-01-11T17:30:00Z"
+  },
+  {
+    "id": "6",
+    "residentId": "4",
+    "category": "Common Area",
+    "description": "Gym equipment needs maintenance. Treadmill #2 stops randomly, and several weight machines have loose bolts. Safety hazard for users.",
+    "status": "Open",
+    "assignedTo": "9",
+    "priority": "Medium",
+    "createdAt": "2024-01-10T19:00:00Z"
+  },
+  {
+    "id": "7",
+    "residentId": "8",
+    "category": "Electrical",
+    "description": "Street lights in the parking area are flickering and some are completely out. This creates poor visibility and safety concerns during night hours.",
+    "status": "Resolved",
+    "assignedTo": "9",
+    "priority": "Medium",
+    "createdAt": "2024-01-09T20:45:00Z"
+  },
+  {
+    "id": "8",
+    "residentId": "2",
+    "category": "Cleanliness",
+    "description": "Garbage collection area near building C has not been cleaned properly. Bad smell and attracting pests. Needs immediate attention and regular maintenance schedule.",
+    "status": "In Progress",
+    "assignedTo": "9",
+    "priority": "High",
+    "createdAt": "2024-01-08T12:15:00Z"
+  },
+  {
+    "id": "9",
+    "residentId": "5",
+    "category": "Administrative",
+    "description": "Requested maintenance fee receipt for tax purposes three weeks ago but haven't received it yet. Need official documentation for financial records.",
+    "status": "Open",
+    "assignedTo": "4",
+    "priority": "Low",
+    "createdAt": "2024-01-07T11:30:00Z"
+  },
+  {
+    "id": "10",
+    "residentId": "9",
+    "category": "Safety",
+    "description": "Fire extinguisher in building B, 2nd floor is expired (last serviced in 2022). Need immediate replacement and check of all other fire safety equipment in the complex.",
+    "status": "Open",
+    "assignedTo": "2",
+    "priority": "High",
+    "createdAt": "2024-01-06T15:45:00Z"
+  }
+]

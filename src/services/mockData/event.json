@@ -1,0 +1,206 @@
+[
+  {
+    "id": "1",
+    "title": "Community New Year Potluck",
+    "description": "Join us for a wonderful community potluck to celebrate the New Year! Bring your favorite dish to share and let's welcome 2024 together. Family-friendly event with games and activities for kids.",
+    "datetime": "2024-01-21T12:00:00Z",
+    "location": "Community Hall",
+    "rsvps": [
+      {
+        "userId": "1",
+        "status": "attending",
+        "timestamp": "2024-01-12T17:00:00Z"
+      },
+      {
+        "userId": "3",
+        "status": "attending",
+        "timestamp": "2024-01-12T18:30:00Z"
+      },
+      {
+        "userId": "6",
+        "status": "attending",
+        "timestamp": "2024-01-12T19:15:00Z"
+      }
+    ],
+    "createdBy": "3"
+  },
+  {
+    "id": "2",
+    "title": "Monthly Society Meeting",
+    "description": "Regular monthly meeting to discuss society matters, budget updates, maintenance issues, and community improvements. All residents are encouraged to attend and participate in decisions affecting our community.",
+    "datetime": "2024-01-20T18:00:00Z",
+    "location": "Community Hall",
+    "rsvps": [
+      {
+        "userId": "2",
+        "status": "attending",
+        "timestamp": "2024-01-14T15:20:00Z"
+      },
+      {
+        "userId": "4",
+        "status": "attending",
+        "timestamp": "2024-01-14T16:45:00Z"
+      }
+    ],
+    "createdBy": "5"
+  },
+  {
+    "id": "3",
+    "title": "Yoga in the Park",
+    "description": "Start your weekend with a relaxing yoga session in our community garden area. Suitable for all levels. Please bring your own mat and water bottle. Session led by certified instructor Lisa Thompson.",
+    "datetime": "2024-01-27T08:00:00Z",
+    "location": "Community Garden",
+    "rsvps": [
+      {
+        "userId": "1",
+        "status": "attending",
+        "timestamp": "2024-01-15T10:30:00Z"
+      },
+      {
+        "userId": "7",
+        "status": "maybe",
+        "timestamp": "2024-01-15T11:00:00Z"
+      }
+    ],
+    "createdBy": "5"
+  },
+  {
+    "id": "4",
+    "title": "Kids' Movie Night",
+    "description": "Family movie night featuring a popular animated film! Popcorn and drinks will be provided. Perfect opportunity for families to bond and kids to make new friends in the community.",
+    "datetime": "2024-02-03T19:00:00Z",
+    "location": "Community Hall",
+    "rsvps": [
+      {
+        "userId": "6",
+        "status": "attending",
+        "timestamp": "2024-01-16T14:20:00Z"
+      }
+    ],
+    "createdBy": "2"
+  },
+  {
+    "id": "5",
+    "title": "Community Garden Workshop",
+    "description": "Learn the basics of urban gardening and sustainable practices. We'll cover composting, seasonal planting, and organic pest control. Perfect for beginners and experienced gardeners alike!",
+    "datetime": "2024-02-10T10:00:00Z",
+    "location": "Community Garden Area",
+    "rsvps": [
+      {
+        "userId": "2",
+        "status": "attending",
+        "timestamp": "2024-01-15T16:45:00Z"
+      },
+      {
+        "userId": "3",
+        "status": "attending",
+        "timestamp": "2024-01-15T17:20:00Z"
+      },
+      {
+        "userId": "10",
+        "status": "maybe",
+        "timestamp": "2024-01-15T18:00:00Z"
+      }
+    ],
+    "createdBy": "2"
+  },
+  {
+    "id": "6",
+    "title": "Valentine's Day Community Dinner",
+    "description": "Romantic dinner event for couples in our community. Three-course meal prepared by local catering service. Music, dancing, and a wonderful evening to celebrate love with your neighbors.",
+    "datetime": "2024-02-14T19:00:00Z",
+    "location": "Community Hall",
+    "rsvps": [],
+    "createdBy": "3"
+  },
+  {
+    "id": "7",
+    "title": "Fire Safety Workshop",
+    "description": "Important safety workshop conducted by the local fire department. Learn about fire prevention, emergency procedures, and proper use of fire extinguishers. Mandatory for all committee members.",
+    "datetime": "2024-02-17T14:00:00Z",
+    "location": "Community Hall",
+    "rsvps": [
+      {
+        "userId": "2",
+        "status": "attending",
+        "timestamp": "2024-01-16T09:30:00Z"
+      },
+      {
+        "userId": "3",
+        "status": "attending",
+        "timestamp": "2024-01-16T10:00:00Z"
+      },
+      {
+        "userId": "4",
+        "status": "attending",
+        "timestamp": "2024-01-16T10:15:00Z"
+      },
+      {
+        "userId": "5",
+        "status": "attending",
+        "timestamp": "2024-01-16T10:30:00Z"
+      }
+    ],
+    "createdBy": "5"
+  },
+  {
+    "id": "8",
+    "title": "Book Club Launch Meeting",
+    "description": "First meeting of our new community book club! We'll discuss book selection for the first quarter, meeting schedule, and logistics. Come with your favorite book recommendations!",
+    "datetime": "2024-02-25T15:00:00Z",
+    "location": "Community Library Corner",
+    "rsvps": [
+      {
+        "userId": "1",
+        "status": "attending",
+        "timestamp": "2024-01-06T22:00:00Z"
+      },
+      {
+        "userId": "7",
+        "status": "attending",
+        "timestamp": "2024-01-06T22:15:00Z"
+      },
+      {
+        "userId": "10",
+        "status": "attending",
+        "timestamp": "2024-01-06T22:30:00Z"
+      }
+    ],
+    "createdBy": "10"
+  },
+  {
+    "id": "9",
+    "title": "Spring Cleaning Community Day",
+    "description": "Annual community cleanup and beautification day! We'll be cleaning common areas, trimming plants, and doing small maintenance tasks. Lunch will be provided for all volunteers.",
+    "datetime": "2024-03-02T09:00:00Z",
+    "location": "Throughout Community",
+    "rsvps": [
+      {
+        "userId": "2",
+        "status": "attending",
+        "timestamp": "2024-01-17T12:00:00Z"
+      }
+    ],
+    "createdBy": "2"
+  },
+  {
+    "id": "10",
+    "title": "Holi Color Festival Celebration",
+    "description": "Join us for a vibrant Holi celebration! Colors, music, traditional snacks, and lots of fun. Open to all residents and their families. Please wear old clothes that you don't mind getting colorful!",
+    "datetime": "2024-03-10T16:00:00Z",
+    "location": "Community Courtyard",
+    "rsvps": [
+      {
+        "userId": "6",
+        "status": "attending",
+        "timestamp": "2024-01-18T11:30:00Z"
+      },
+      {
+        "userId": "8",
+        "status": "maybe",
+        "timestamp": "2024-01-18T12:00:00Z"
+      }
+    ],
+    "createdBy": "6"
+  }
+]
